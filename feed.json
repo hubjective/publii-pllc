@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Lee Anne Horn, PMHNP-BC",
+    "description": "",
+    "home_page_url": "https://hubjective.github.io/publii-pllc",
+    "feed_url": "https://hubjective.github.io/publii-pllc/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Rob"
+    },
+    "items": [
+        {
+            "id": "https://hubjective.github.io/publii-pllc/home.html",
+            "url": "https://hubjective.github.io/publii-pllc/home.html",
+            "title": "Home",
+            "summary": "I’m so glad you came to my page and hope you find the information you would like to know about me and my practice in psychiatric mental health nursing. Our world has come a great distance in accepting that psychiatric disorders are valid medical conditions&hellip;",
+            "content_html": "<p>I’m so glad you came to my page and hope you find the information you would like to know about me and my practice in psychiatric mental health nursing.</p>\n<p>Our world has come a great distance in accepting that psychiatric disorders are valid medical conditions that deserve recognition and treatment. I’d love to say psychiatric disorders are as simple as a minor bacterial infection. Culture the bug, treat it with the antibiotic it responds to and you are done. Psychiatric care hasn’t made it that far yet… and the truth is, I don’t know if it will ever be that simple.</p>\n<p>Psychiatric disorders are multi-factorial and for only a very limited number of clients will a medication resolve symptoms completely. Psychiatric disorders, similar to other medical disorders, are interconnected with anatomy, physiology, genetics, emotions, nutrition, activity, life circumstances, spirituality… and more. I envision my role in your healing process as the person who provides the knowledge to empower you to make decisions and to choose the best tools. We will work neurochemically and physiologically combined with your other work in therapy, lifestyle changes, support systems, exercise, etc to improve your circumstances.</p>\n<p>I would like to say I can fix you, but I can’t. First, and most importantly, because you don’t need fixing. You are perfect as you are. You may not be feeling that right now, but you are. Second, there isn’t a medication out there that can make it all better. In my view, medication is a tool that allows you space from what you are experiencing and that allows you to put the steps of resiliency into action.</p>\n<p>If you think that psychotropic medications can correct neurochemical imbalances, as current theory supports, you are correct, but we are more than neurochemicals. Healing requires more than a drug. My role as a psychiatric nurse practitioner is to work with you neurochemically and psychotherapeutically to move forward and progress in your journey to health and well-being.</p>",
+            "author": {
+                "name": "Rob"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-10-22T11:34:19-04:00",
+            "date_modified": "2024-10-22T11:34:19-04:00"
+        }
+    ]
+}
