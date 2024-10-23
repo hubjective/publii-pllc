@@ -4,4 +4,4 @@ User-agent: GPTBot
 Disallow: /
 User-agent: *
 Disallow:
-Sitemap: https://hubjective.github.io/publii-pllc/sitemap.xml
+Sitemap: https://leeannehorn.com/sitemap.xml
