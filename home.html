@@ -4,14 +4,27 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MedicalBusiness",
-      "@id": "https://leeannehorn.com",
+      "@type": "WebSite",
+      "@id": "https://leeannehorn.com/#website",
+      "url": "https://leeannehorn.com/",
       "name": "Lee Anne Horn, PLLC",
+      "publisher": {
+        "@id": "https://leeannehorn.com/#business"
+      }
+    },
+    {
+      "@type": ["MedicalClinic", "MedicalOrganization"],
+      "@id": "https://leeannehorn.com/#business",
+      "name": "Lee Anne Horn, PLLC",
+      "url": "https://leeannehorn.com/",
       "image": "https://leeannehorn.com/media/files/View-From-Street.webp",
-      "url": "https://leeannehorn.com",
       "description": "Outpatient psychiatric mental health care and medication management in Asheville, North Carolina.",
-      "medicalSpecialty": "Psychiatric",
+      "telephone": "+1-828-457-9553",
       "priceRange": "$$",
+      "medicalSpecialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Psychiatric"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "96 Central Avenue",
@@ -20,25 +33,106 @@
         "postalCode": "28801",
         "addressCountry": "US"
       },
-      "telephone": "+1-828-457-9553"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.60205,
+        "longitude": -82.55014
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Asheville",
+          "sameAs": "https://en.wikipedia.org/wiki/Asheville,_North_Carolina"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Buncombe County"
+        },
+        {
+          "@type": "State",
+          "name": "North Carolina"
+        }
+      ],
+      "founder": {
+        "@id": "https://leeannehorn.com/#person"
+      },
+      "employee": {
+        "@id": "https://leeannehorn.com/#person"
+      },
+      "openingHoursSpecification": [
+        {
+	"description": "By appointment only"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Psychiatric Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Psychiatric Evaluation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Medication Management"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "Person",
-      "@id": "https://leeannehorn.com/about-me.html",
-      "name": "Lee Anne Horn, PMHNP-BC",
+      "@id": "https://leeannehorn.com/#person",
+      "name": "Lee Anne Horn",
+      "honorificSuffix": "PMHNP-BC",
       "jobTitle": "Psychiatric Mental Health Nurse Practitioner",
       "image": "https://leeannehorn.com/media/files/LA-Headshot-md.webp",
       "description": "Board-certified Psychiatric Mental Health Nurse Practitioner specializing in medication management and integrative psychiatric care.",
       "worksFor": {
-        "@id": "https://leeannehorn.com"
+        "@id": "https://leeannehorn.com/#business"
       },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "NPI",
+        "value": "1356786016"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Board Certification",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "American Nurses Credentialing Center",
+          "alternateName": "ANCC"
+        }
+      },
+      "sameAs": [
+        "https://npiregistry.cms.hhs.gov/provider-view/1356786016",
+    	"https://www.doximity.com/pub/lee-anne-horn-np",
+    	"https://www.healthgrades.com/providers/lee-horn-y9t2vvz",
+    	"https://www.therapyden.com/therapist/lee-anne-horn-asheville-nc",
+    	"https://beingseen.org/therapist/lee-annehorn/"
+      ],
       "knowsAbout": [
-        "Psychiatric Mental Health Nursing",
-        "Medication Management",
-        "Psychotherapy",
-        "Cognitive Behavioral Therapy",
-        "Anxiety Disorders",
-        "Mood Disorders"
+        {
+          "@type": "Thing",
+          "name": "Psychiatry",
+          "sameAs": "https://en.wikipedia.org/wiki/Psychiatry"
+        },
+        {
+          "@type": "Thing",
+          "name": "Psychiatric Mental Health Nurse Practitioner",
+          "sameAs": "https://en.wikipedia.org/wiki/Psychiatric-mental_health_nurse_practitioner"
+        },
+        {
+          "@type": "Thing",
+          "name": "Psychopharmacology",
+          "sameAs": "https://en.wikipedia.org/wiki/Psychopharmacology"
+        }
       ]
     }
   ]
